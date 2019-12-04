@@ -18,7 +18,6 @@ class App extends Component {
   }
 
   handleView(value) {
-    console.log(value);
     this.setState({display: value});
   }
   
