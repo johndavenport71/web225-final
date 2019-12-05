@@ -24,7 +24,7 @@ class App extends Component {
   render () {
     return (
         <div className="wrapper">
-          <Header changeView={this.handleView} />
+          <Header changeView={this.handleView} current={this.state.display} />
           <main>
             {this.state.display === 'about' ? <About /> : ''}
             {this.state.display === 'menu' ? <Menu /> : ''}

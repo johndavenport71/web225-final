@@ -1,11 +1,41 @@
+@import url('https://fonts.googleapis.com/css?family=Cinzel|Quicksand&display=swap');
+
 body {
     box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
     margin: 0;
-    padding: 0;
+    padding: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Cinzel', serif;
+    letter-spacing: .25rem;
+}
+
+h1 {
+    border-bottom: 1px solid #000;
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+
+h3 {
+    font-size: 1.4rem;
 }
 
 #root {
     margin: 0 1rem;
+}
+
+nav {
+    margin-top: 0;
 }
 
 nav ul li {
@@ -15,5 +45,31 @@ nav ul li {
 }
 
 nav ul li:hover {
-    text-decoration: underline;
+    border-bottom: 1px solid #000;
+}
+
+nav .current {
+    border-bottom: 1px solid #000;
+}
+
+#menu {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+.card { 
+    flex: 1 1 48%;
+    margin-left: 1rem;
+    max-width: 400px;
+    min-height: 200px;
+    padding: .5rem;
+}
+
+.card img {
+    display: block;
+}
+
+.card > p:last-child {
+    font-weight: bold;
 }
