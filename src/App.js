@@ -4,6 +4,8 @@ import Header from './Header';
 import About from './About';
 import Menu from './Menu';
 import Contact from './Contact';
+import Footer from './Footer';
+import Newsfeed from './Newsfeed';
 
 class App extends Component {
   constructor(props) {
@@ -30,6 +32,8 @@ class App extends Component {
             {this.state.display === 'menu' ? <Menu /> : ''}
             {this.state.display === 'contact' ? <Contact /> : ''}
           </main>
+          <Newsfeed />
+          <Footer />
         </div>
       );
     
